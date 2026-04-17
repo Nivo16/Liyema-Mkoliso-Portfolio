@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liyema Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <h1 style="color: rgb(219, 106, 14);">LM</h1>
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="fade-in">
+    <img src="assets/portfolio.jpg" class="profile">
+
+    <h2>Hello, I'm Liyema</h2>
+    <h3 style="color: rgb(219, 106, 14);" id="roles"></h3>
+
+    <div class="buttons">
+        <a href="assets/Liyema-Mkoliso-CV.pdf" download class="btn">Download My CV</a>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/liyema-mkoliso-6779ab250/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Nivo16" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br>
+<!-- ABOUT -->
+<section id="about" class="about-section">
+    <div class="about-card">
+        <h2>About Me</h2>
+        <p>
+            I'm a BSc Chemistry graduate who enjoys working at the intersection of science and technology. 
+            My journey has taken me from hands-on laboratory analysis to building full-stack web applications, 
+            giving me a strong mix of analytical thinking and practical problem-solving skills.
+
+            I've developed responsive web projects, explored data analysis, and gained experience through tutoring 
+            and sharing knowledge with others. I'm naturally curious and always looking to learn something new.
+
+            What drives me is the opportunity to create meaningful, real-world solutions by combining my scientific 
+            background with digital innovation. I thrive in environments where I can grow, contribute, and bring 
+            ideas to life through thoughtful problem-solving.
+        </p>
+    </div>
+</section>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>Technical</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Vue.js</li>
+                <li>Node.js & Express.js</li>
+                <li>MySQL</li>
+                <li>Oracle SQL & Oracle Apex</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Communication</li>
+                <li>Problem Solving</li>
+                <li>Leadership</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<br><br><br><br><br><br><br><br><br><br>
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Hobby In a Box</h3>
+            <p>
+                A full-stack e-commerce web application that allows users to browse, select, 
+                and purchase curated hobby kits. Built with a focus on user experience, 
+                responsive design, and seamless product interaction.
+            </p>
+
+             <button onclick="window.open('https://github.com/phoenix-go-cawcaw/Group13-Module3-Project/tree/main'', '_blank')"> View</button>
+        
+            
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>MobileTech</h3>
+            <p>
+                A full-stack system combining frontend and backend technologies to manage 
+                mobile-related services. Focused on efficient data handling, API integration, 
+                and scalable backend architecture.
+            </p>
+             <button onclick="window.open('https://github.com/SizaMpafa/ModernTechSolutionsBackEnd.git', '_blank')"> View</button>
+
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br>
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+    <h2 style="color: rgb(219, 106, 14);">Get In Touch</h2>
+
+    <p style="color: white;">Feel free to reach out, I am available for new opportunities and collaborations!</p>
+
+    <!-- Contact Button -->
+    <button class="contact-btn" onclick="toggleForm()">Contact Me</button>
+<br><br>
+    <!-- Form -->
+    <div id="contactForm" class="form-container">
+        <form onsubmit="sendEmail(event)">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <p>© 2026 Liyema Mkoliso</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
