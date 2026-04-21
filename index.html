@@ -9,7 +9,12 @@
 <!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+    emailjs.init("ehH9wdBdzYOz9tP88");
+})();
+</script>
 <body>
 
 <header>
@@ -143,7 +148,7 @@
 <br><br>
     <!-- Form -->
     <div id="contactForm" class="form-container">
-        <form onsubmit="sendEmail(event)">
+        <form id="contactFormElement">
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="Email" required>
             <textarea name="message" placeholder="Message" required></textarea>
@@ -151,8 +156,8 @@
         </form>
     </div>
 </section>
-<footer>
-    <p>© 2026 Liyema Mkoliso</p>
+<footer class="footer">
+    <p>© 2026 <span>Liyema Mkoliso</span></p>
 </footer>
 
 <script src="script.js"></script>

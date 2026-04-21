@@ -40,24 +40,24 @@ function showOnScroll() {
         }
     });
 }
-
-window.addEventListener("scroll", showOnScroll);
-function toggleForm() {
-    const form = document.getElementById("contactForm");
-    form.style.display = form.style.display === "block" ? "none" : "block";
-}
-function sendEmail(e) {
+(function(){
+    emailjs.init("ehH9wdBdzYOz9tP88");
+})();
+document.getElementById("contactFormElement").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
-
-    let mailtoLink = `mailto:mkolisoliyema@gmail.com?subject=Contact from ${name}&body=${message} (${email})`;
-
-    window.location.href = mailtoLink;
-}
-
+    emailjs.send("service_l2lwx9c", "template_shpkuho", {
+        from_name: document.getElementById("name").value,
+        from_email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    })
+    .then(function() {
+        alert("Message sent successfully!");
+    }, function(error) {
+        alert("Failed to send message. Try again.");
+        console.log(error);
+    });
+});
 // ...existing code...
 
 // Add this after your existing functions
