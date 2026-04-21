@@ -239,18 +239,6 @@ section {
     text-align: center;
 }
 
-/* ANIMATION */
-.fade-in {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: 1s;
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-
 /* MOBILE */
 @media (max-width: 768px) {
     h1 {

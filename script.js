@@ -25,21 +25,6 @@ function type() {
 }
 type();
 
-
-// Scroll animation
-const elements = document.querySelectorAll(".fade-in");
-
-function showOnScroll() {
-    const trigger = window.innerHeight * 0.8;
-
-    elements.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-
-        if (top < trigger) {
-            el.classList.add("show");
-        }
-    });
-}
 (function(){
     emailjs.init("ehH9wdBdzYOz9tP88");
 })();
