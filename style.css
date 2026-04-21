@@ -36,6 +36,7 @@ nav a {
     margin: 20px;
     display: flex;
     gap: 10px;
+    justify-content:center;
 }
 
 .btn {
@@ -179,7 +180,9 @@ nav a {
 .form-container {
     display: none;
 }
-
+.form-container.show {
+    display: block;
+}
 form {
     background: #1a1a1a;
     padding: 25px;
@@ -250,17 +253,16 @@ section {
     h1 {
         font-size: 22px;
     }
-
     p {
         font-size: 14px;
     }
-
     .buttons {
         flex-direction: column;
+        align-items:center;
     }
 
     .contact-btn {
-        width: 100%;
+        width: 80%;
     }
 
     form {

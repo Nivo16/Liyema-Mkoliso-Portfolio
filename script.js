@@ -24,7 +24,16 @@ function type() {
     setTimeout(type, deleting ? 50 : 100);
 }
 type();
+//*Contact Me Button to show the form*//
+function toggleForm() {
+    const form = document.getElementById("contactForm");
 
+    if (form.style.display === "block") {
+        form.style.display = "none";
+    } else {
+        form.style.display = "block";
+    }
+}
 (function(){
     emailjs.init("ehH9wdBdzYOz9tP88");
 })();
